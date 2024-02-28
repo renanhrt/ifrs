@@ -1,0 +1,64 @@
+body{
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+}
+
+.itemmenu{
+    color: black;
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.itemmenu:hover{
+    padding: 15px;
+    background-color: lightblue;
+}
+.itemmenu:link{    
+}
+.itemmenu:active{
+}
+.itemmenu:visited{
+}
+
+h1{
+    background-color: lightblue;
+}
+
+.Salgados{
+    color: black;
+}
+
+/*uma forma de dimensionar imagem*/
+img{
+    border-radius: 4px;
+    width: 600px;
+    margin: 20px auto; /* up-down  left-right */
+}
+
+table{
+    margin: 0 auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table td{
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 5px
+}
+
+ol{
+    list-style: none;
+}
+
+
+/*
+figure{
+    width: 400px;
+}
+
+img{
+    width: 100%;
+}
+*/
