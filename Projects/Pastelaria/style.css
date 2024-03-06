@@ -1,7 +1,11 @@
 body{
-    background-color: lightgoldenrodyellow;
+    background-color: wheat;
+}
+h1, h2, p, ol, figure{
+    align-items: center;
     text-align: center;
 }
+
 
 .itemmenu{
     color: black;
@@ -9,31 +13,57 @@ body{
     background-color: white;
     border-radius: 4px;
     text-decoration: none;
+    padding: 0 10px;
 }
 .itemmenu:hover{
     padding: 15px;
     background-color: lightblue;
-}
-.itemmenu:link{    
-}
-.itemmenu:active{
-}
-.itemmenu:visited{
+    transition: 0.25s;
 }
 
-h1{
-    background-color: lightblue;
+h1, h2{
+    padding: 1rem 40px;
+    margin: 0 5rem;
+}
+
+.item p{
+    display: inline-block;
+    font-size: 18px;
+}
+.price{
+    text-align: right;
+    width: 25%;
+}
+.product{
+    text-align: left;
+    width: 75%;
+}
+
+
+
+hr{
+    background-color: brown;
+    border-color: black;
+    height: 2px;
+    margin: 20px 0;
+}
+
+.menu{
+    max-width: 700px;
+    padding: 2rem 2rem;
+    margin: 4rem auto;
+    background-color: burlywood;
+    width: 60%;
 }
 
 .Salgados{
     color: black;
 }
 
-/*uma forma de dimensionar imagem*/
 img{
     border-radius: 4px;
     width: 600px;
-    margin: 20px auto; /* up-down  left-right */
+    margin: 20px auto; 
 }
 
 table{
@@ -53,12 +83,3 @@ ol{
 }
 
 
-/*
-figure{
-    width: 400px;
-}
-
-img{
-    width: 100%;
-}
-*/
