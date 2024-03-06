@@ -7,13 +7,36 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-    </header>
-    <nav>
-    </nav>
-    <main>
-    </main>
-    <footer>
-    </footer>
+    <form>
+        <fieldset>
+            <legend>Dados do livro</legend>
+            <label for="titulo">Título: </label> 
+            <input name= "titulo" id="titulo" type="text" placeholder="Insira o texto" required>
+        </fieldset>
+
+        <select name="editora" id="editora">
+            <option value="a">Editora A</option>
+            <option value="b">Editora B</option>
+        </select>
+
+        <fieldset>
+            <legend>Genêro do livro</legend>
+            <label for="humor">Humor</label>
+            <input type="checkbox" name="humor" id="humor" value="humor">
+            <label for="drama">Drama</label>
+            <input type="checkbox" name="drama" id="drama" value="drama">
+        </fieldset>  
+
+        <fieldset>
+            <legend>Foi lançado?</legend>
+            <label for="sim">Sim</label>
+            <input type="radio" name="lancado" id="sim" value="sim">
+            <label for="nao">Não</label>
+            <input type="radio" name="lancado" id="nao" value="nao">
+        </fieldset>
+        
+        <input type="submit" name="botao" value="Enviar">
+        <input type="reset" name="apagar" value="Apagar">
+    </form>
 </body>
 </html>
