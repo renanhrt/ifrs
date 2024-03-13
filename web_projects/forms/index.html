@@ -7,7 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
+
+    <form action="cadastro.php" method="post">
         <fieldset>
             <legend>Dados do livro</legend>
             <label for="titulo">Título: </label> 
@@ -23,7 +24,7 @@
             <legend>Genêro do livro</legend>
             <label for="humor">Humor</label>
             <input type="checkbox" name="humor" id="humor" value="humor">
-            <label for="drama">Drama</label>
+            <label for="drama">Drama</label> 
             <input type="checkbox" name="drama" id="drama" value="drama">
         </fieldset>  
 
@@ -38,5 +39,6 @@
         <input type="submit" name="botao" value="Enviar">
         <input type="reset" name="apagar" value="Apagar">
     </form>
+    
 </body>
 </html>

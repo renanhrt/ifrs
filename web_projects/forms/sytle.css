@@ -1,5 +1,30 @@
-div {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap');
+
+*{
+    font-family: "Montserrat";
+}
+
+div{
     width: 200px;
     height: 200px;
     background-color: lawngreen;
+    font-size: 20px;
+}
+
+input[type='text']{
+    background-color: cadetblue;
+}
+input[type='submit'], input[type='reset']{
+    background-color: grey;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid cadetblue;
+}
+input[type='submit']:hover, input[type='reset']:hover{
+    padding: 6px;
+    background-color: white;   
+}
+label::before{
+    margin: 5px;
+    content: ':)';
 }

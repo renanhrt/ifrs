@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto+Slab:wght@100..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+header img{
+    padding: 25px 20px;
+    width: 30px;
+}
+header p{
+    font-size: 25px;
+    font-family: "Roboto Slab", serif;
+}
+
+.container{
+    padding: 3rem 2rem;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+.container p{
+    margin: 0;
+    color: white;
+    font-size: 110px;
+    width: 300px;
+    font-family: "Crimson Text", serif;
+}
+.container .photo{
+    margin: 0;
+}
+.container .photo img{
+    width: 300px;
+    border-radius: 20%;
+}
+
+.aboutme .questions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.aboutme .questions .questions{
+    align-items: center;
+}
