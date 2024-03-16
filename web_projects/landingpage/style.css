@@ -10,11 +10,50 @@ header{
     gap: 20px;
 }
 header img{
-    width: 30px;
-    height: 30px;
-    margin: 10px 0 0 0;
+    width: 40px;
+    height: 50px;
 }
 header p{
     font-size: 50px;
     margin: 0; 
+}
+
+.main{
+    display: flex;
+    background-color: black;
+    padding: 40px 200px;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+}
+.main .photo img{
+    width: 400px;
+    border-radius: 10%;
+}
+.main p{
+    color: white;
+    font-size: 160px;
+    margin: 0px;
+}
+.aboutme{
+    padding: 0 50px;
+}
+.aboutme h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 50px;
+}
+.aboutme .questions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutme .questions h2, p{
+    display: flex;
+    justify-content: center;
+}
+.aboutme .question{
+    justify-content: center;
+    flex: 1;
 }
