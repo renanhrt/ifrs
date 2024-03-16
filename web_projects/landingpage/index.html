@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
 <body>
+    <div class="sidebar" id="sidebar">
+        <button id="closeBtn" onclick="closeSidebar()">Close &times;</button>
+        <a href="#">Home</a>
+        <a href="#">Books</a>
+        <a href="#">Songs</a>
+        <a href="#">Movies</a>
+    </div>
+
     <header>
-        <img src="https://cdn-icons-png.flaticon.com/128/1828/1828859.png" alt="menu icon">
-        <p>MENU</p>
+        <button id="openBtn" onclick="openSidebar()">&#9776;</button>    
     </header>
     <div class="main">
         <div class="photo">
@@ -25,17 +31,29 @@
         <div class="questions">
             <div class="question">
                 <h2>What is your job?</h2>
-                <p>I'm currently working as a</p>
+                <p>I'm currently in an internship at Madesa Furniture. As an intern, my job is to develop automation facilities to help save time in my sector.</p>
             </div>
             <div class="question">
                 <h2>What are your plans to the future?</h2>
-                <p>In the future,</p>
+                <p>In the future, I plan to pursue a degree in Computer Science or Software Engineering. I aim to apply to federal institutions, such as UFRGS, to further my education in this field.</p>
             </div>
             <div class="question">
                 <h2>What is your passion?</h2>
-                <p>In my free time,</p>
+                <p>In my free time, I like listening to music, playing the trumpet, playing video games, and sometimes joining in volleyball games.</p>
             </div>
         </div>
     </div>
+
+    <footer>
+        <h1>Contact</h1>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/renan-hardt-06ab742ab/" class="fa fa-linkedin" target="_blank"></a>
+            <a href="https://www.instagram.com/renanhrt/" class="fa fa-instagram" target="_blank"></a>
+            <a href="https://github.com/renanhrt" class="fa fa-github" target="_blank"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a2e5b093ed.js" crossorigin="anonymous"></script>    <title>Document</title>
 </body>
 </html>

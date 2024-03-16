@@ -1,6 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Slabo+27px&display=swap');
+
 body{
     margin: 0;
     padding: 0;
+}
+
+.sidebar {
+    width: 300px;
+    height: 100%;
+    background-color: darkgrey;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    transition: left 0.3s ease;
+    z-index: 1;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar button, a{
+    border: none;
+    padding: 20px 15px;
+    background-color: darkgrey;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family: "Arimo", sans-serif;
+}
+
+.sidebar button:hover, a:hover{
+    background-color: gray;
 }
 
 header{
@@ -9,13 +42,17 @@ header{
     padding: 10px;
     gap: 20px;
 }
-header img{
-    width: 40px;
-    height: 50px;
+header button{
+    border: none;
+    background-color: white;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
-header p{
-    font-size: 50px;
-    margin: 0; 
+header button:hover{
+    background-color: grey;
 }
 
 .main{
@@ -44,16 +81,45 @@ header p{
     font-size: 50px;
     margin-top: 50px;
 }
+.aboutme h2{
+    font-size: 32px;
+}
 .aboutme .questions{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-.aboutme .questions h2, p{
+    font-size: 24px;
+    font-family: "Slabo 27px", serif;
     display: flex;
     justify-content: center;
 }
+
+    
 .aboutme .question{
     justify-content: center;
     flex: 1;
+    text-align: center;
+    p {
+        padding: 0 100px;
+    }
+}
+
+footer{
+    padding-top: 5px;
+    background-color: black;
+}
+footer h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.social a{
+    background-color: black;
+    color: white;
 }
