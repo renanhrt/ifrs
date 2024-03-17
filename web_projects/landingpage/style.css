@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Slabo+27px&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Konkhmer+Sleokchher&family=Slabo+27px&family=Vujahday+Script&display=swap');
 body{
     margin: 0;
     padding: 0;
 }
 
 .sidebar {
-    width: 300px;
+    width: 250px;
     height: 100%;
-    background-color: darkgrey;
+    background-color: #11101d;
     color: #fff;
     position: fixed;
     top: 0;
@@ -19,43 +19,65 @@ body{
     text-decoration: none;
     display: flex;
     flex-direction: column;
+    padding: 10px;
+    
+}
+.sidebar i{
+    padding-right: 10px;
 }
 .sidebar button, a{
+    display: flex;
     border: none;
     padding: 20px 15px;
-    background-color: darkgrey;
+    background-color: #11101d;
     text-align: left;
     cursor: pointer;
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 25px;
     font-family: "Arimo", sans-serif;
+    border-radius: 10px;
 }
 
 .sidebar button:hover, a:hover{
-    background-color: gray;
+    background-color: white;
+    color: black;
 }
 
 header{
-    display: flex;
-    align-items: center;
+    width: 100%;
     padding: 10px;
     gap: 20px;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    overflow: hidden;
+    margin-bottom: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1{
+    margin: 0;
+}
+header div{
+    width: 60px;
 }
 header button{
     border: none;
     background-color: white;
     font-size: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     cursor: pointer;
+    border-radius: 10px;
+    width: 60px;
 }
 header button:hover{
-    background-color: grey;
+    background-color: #11101d;
+    color: white;
 }
 
 .main{
+    margin-top: 75px;
     display: flex;
     background-color: black;
     padding: 40px 200px;
@@ -68,9 +90,11 @@ header button:hover{
     border-radius: 10%;
 }
 .main p{
+    width: 400px;
     color: white;
-    font-size: 160px;
+    font-size: 130px;
     margin: 0px;
+    font-family: "Vujahday Script", cursive;
 }
 .aboutme{
     padding: 0 50px;
@@ -79,12 +103,17 @@ header button:hover{
     display: flex;
     justify-content: center;
     font-size: 50px;
-    margin-top: 50px;
+    margin: 33.5px 0;
+}
+hr{
+    width: 95%;
+    height: 2px;
+    background-color: black;
 }
 .aboutme h2{
     font-size: 32px;
 }
-.aboutme .questions{
+.aboutme .questions, .images{
     display: flex;
     justify-content: space-between;
     font-size: 24px;
@@ -92,7 +121,12 @@ header button:hover{
     display: flex;
     justify-content: center;
 }
-
+.aboutme img{
+    padding: 30px 60px;
+    width: 350px;
+    border-radius: 20%;
+    flex: 1;
+}
     
 .aboutme .question{
     justify-content: center;
@@ -100,11 +134,12 @@ header button:hover{
     text-align: center;
     p {
         padding: 0 100px;
+        margin: 0;
     }
 }
 
 footer{
-    padding-top: 5px;
+    padding: 5px 0;
     background-color: black;
 }
 footer h1{
@@ -122,4 +157,49 @@ footer h1{
 .social a{
     background-color: black;
     color: white;
+}
+footer p{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+
+
+.toppage{
+    margin-top: 75px;
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.toppage img{
+    width: 50%;
+    border-radius: 12px;
+}
+.toppage h1, .h1song{
+    font-size: 50px;
+    text-align: center;
+}
+.toppage p{
+    font-size: 28px;
+}
+.top5{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 48px;
+}
+.top5 img{
+    width: 50%;
+    border-radius: 12px;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px
 }
