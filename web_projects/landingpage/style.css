@@ -133,7 +133,7 @@ hr{
     flex: 1;
     text-align: center;
     p {
-        padding: 0 100px;
+        padding: 0 50px;
         margin: 0;
     }
 }
@@ -202,4 +202,76 @@ footer p{
     flex-direction: column;
     align-items: center;
     gap: 10px
+}
+.topmovies{
+    text-align: center;
+}
+.sortable-list, .positions{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background-color: #11101d;
+    border-radius: 12px;
+    margin: 20px;
+    padding: 0 15px;
+}
+.positions p{
+    font-size: 40px;
+    color: white;
+    flex: 1;
+    margin: 0;
+}
+
+.sortable-list i{
+    font-size: 25px;
+}
+.sortable-list .item{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 12px;
+    height: 340px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+.sortable-list .item:hover{
+    height: 350px;
+    animation-duration: 0.5s;
+    margin: 10px 0;
+}
+.sortable-list img{
+    width: 150px;
+    height: 200px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+.item.dragging {
+    background-color: darkslategrey;
+    opacity: 1;
+  }
+.item.dragging :where(img, i, h2) {
+    opacity: 0;
+}
+.topmovies button{
+    background-color: #11101d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+#counterDisplay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 40px;
 }

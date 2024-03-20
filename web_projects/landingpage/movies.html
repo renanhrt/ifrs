@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Favourite Songs</title>
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <button id="closeBtn" onclick="closeSidebar()">Close &times;</button>
+        
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#"><i class="fa-solid fa-book"></i>Books</a>
+        <a href="#"><i class="fa-solid fa-music"></i>Songs</a>
+        <a href="#"><i class="fa-solid fa-film"></i>Movies</a>
+    </div>
+
+    <header>
+        <button id="openBtn" onclick="openSidebar()">&#9776;</button>    
+        <h1>Movies</h1>
+        <div></div>
+    </header>
+    
+    <div class="toppage">
+        <h1>My Top 5 Movies</h1>
+        <img src="https://dg3fwljcbubde.cloudfront.net/Landing/landing-bg-ww.jpg" alt="music image">
+    </div>
+    
+    <div class="topmovies">
+        <h1 class="topmovies">Guess my Top 5 movies order</h1>
+        <div class="movies-box">
+            <ul class="sortable-list">
+                <li class="item" draggable="true" id="5">
+                    <h2>The Dark Knight</h2>
+                    <img src="https://images.moviesanywhere.com/bd47f9b7d090170d79b3085804075d41/c6140695-a35f-46e2-adb7-45ed829fc0c0.jpg" alt="The Dark Knight">
+                    <i class="fa-solid fa-grip-lines"></i>
+                </li>
+                <li class="item" draggable="true" id="3">
+                    <h2>The Godfather</h2>
+                    <img src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg" alt="The Godfather">
+                    <i class="fa-solid fa-grip-lines"></i>
+                </li>
+                <li class="item" draggable="true" id="4">
+                    <h2>Pixels</h2>
+                    <img src="https://m.media-amazon.com/images/M/MV5BMTIzNDYzMzgtZWMzNS00ODc2LTg2ZmMtOTE2MWZkNzIxMmQ0XkEyXkFqcGdeQXVyNjQ3MDg0MTY@._V1_FMjpg_UX1000_.jpg" alt="The Shawshank Redemption">
+                    <i class="fa-solid fa-grip-lines"></i>
+                </li>
+                <li class="item" draggable="true" id="2">
+                    <h2>Forrest Gump</h2>
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/c/c0/ForrestGumpPoster.jpg">
+                    <i class="fa-solid fa-grip-lines"></i>
+                </li>
+                <li class="item" draggable="true" id="1">
+                    <h2>Insterstellar</h2>
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/3/3a/Interstellar_Filme.png/250px-Interstellar_Filme.png" alt="The Shawshank Redemption">
+                    <i class="fa-solid fa-grip-lines"></i>
+                </li>
+            </ul>
+            <div class="positions">
+                <p>1°</p>
+                <p>2°</p>
+                <p>3°</p>
+                <p>4°</p>
+                <p>5°</p>
+            </div>
+        </div>
+        
+
+        <div id="counterDisplay">
+            <p>0</p>
+        </div>
+
+        <button onclick="checkOrder()">Check</button>
+    </div>
+    
+    
+
+    <footer>
+        <h1>Contact</h1>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/renan-hardt-06ab742ab/" class="fa fa-linkedin" target="_blank"></a>
+            <a href="https://www.instagram.com/renanhrt/" class="fa fa-instagram" target="_blank"></a>
+            <a href="https://github.com/renanhrt" class="fa fa-github" target="_blank"></a>
+        </div>
+        <p>renan.hardt@aluno.feliz.ifrs.edu.br</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a2e5b093ed.js" crossorigin="anonymous"></script>
+</body>
+</html>
