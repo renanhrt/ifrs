@@ -20,7 +20,18 @@ function checkOrder() {
   console.log(counter);
 
   const counterDisplay = document.querySelector("#counterDisplay");
-  counterDisplay.textContent = `Right position counter: ${counter}`;
+
+  // if counter equals 5 lock the list
+
+  if (counter == 5) {
+    counterDisplay.textContent = "You have guessed the right order!";
+    sortableList.removeEventListener("dragover", initSortableRowList);
+    items.forEach(item => {
+      item.setAttribute("draggable", "false");
+    });
+  } else {
+    counterDisplay.textContent = `Right position counter: ${counter}`;
+  }
 }
 
 const sortableList = document.querySelector(".sortable-list");
@@ -36,14 +47,12 @@ items.forEach(item => {
 const initSortableRowList = (e) => {
   e.preventDefault();
   const draggingItem = document.querySelector(".dragging");
-  // Getting all items except currently dragging and making array of them
   let siblings = [...sortableList.querySelectorAll(".item:not(.dragging)")];
-  // Finding the sibling after which the dragging item should be placed
   let nextSibling = siblings.find(sibling => {
       return e.clientX <= sibling.offsetLeft + sibling.offsetWidth / 2;
   });
-  // Inserting the dragging item before the found sibling
   sortableList.insertBefore(draggingItem, nextSibling);
+  checkOrder();
 }
 
 sortableList.addEventListener("dragover", initSortableRowList);

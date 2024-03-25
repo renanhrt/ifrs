@@ -257,21 +257,30 @@ footer p{
 .item.dragging :where(img, i, h2) {
     opacity: 0;
 }
-.topmovies button{
-    background-color: #11101d;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 12px;
-    cursor: pointer;
-    font-size: 40px;
-    margin: 20px 0;
-}
-
 #counterDisplay{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    font-size: 40px;
+    font-size: 50px;
+    margin: 50px;
+}
+
+.top5games{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+}
+.top5games .topgame{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top5games iframe{
+    width: 50%;
+    height: 500px;
+
 }

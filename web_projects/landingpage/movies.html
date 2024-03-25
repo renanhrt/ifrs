@@ -11,9 +11,9 @@
         <button id="closeBtn" onclick="closeSidebar()">Close &times;</button>
         
         <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-        <a href="#"><i class="fa-solid fa-book"></i>Books</a>
-        <a href="#"><i class="fa-solid fa-music"></i>Songs</a>
-        <a href="#"><i class="fa-solid fa-film"></i>Movies</a>
+        <a href="games.html"><i class="fa-solid fa-gamepad"></i>Games</a>
+        <a href="songs.html"><i class="fa-solid fa-music"></i>Songs</a>
+        <a href="movies.html"><i class="fa-solid fa-film"></i>Movies</a>
     </div>
 
     <header>
@@ -30,7 +30,7 @@
     <div class="topmovies">
         <h1 class="topmovies">Guess my Top 5 movies order</h1>
         <div class="movies-box">
-            <ul class="sortable-list">
+            <ol class="sortable-list">
                 <li class="item" draggable="true" id="5">
                     <h2>The Dark Knight</h2>
                     <img src="https://images.moviesanywhere.com/bd47f9b7d090170d79b3085804075d41/c6140695-a35f-46e2-adb7-45ed829fc0c0.jpg" alt="The Dark Knight">
@@ -56,7 +56,7 @@
                     <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/3/3a/Interstellar_Filme.png/250px-Interstellar_Filme.png" alt="The Shawshank Redemption">
                     <i class="fa-solid fa-grip-lines"></i>
                 </li>
-            </ul>
+            </ol>
             <div class="positions">
                 <p>1°</p>
                 <p>2°</p>
@@ -68,10 +68,8 @@
         
 
         <div id="counterDisplay">
-            <p>0</p>
+            Right position counter: 0
         </div>
-
-        <button onclick="checkOrder()">Check</button>
     </div>
     
     
